@@ -1,3 +1,4 @@
-console.log(countries)
-alert('Open the browser console whenever you work on JavaScript')
-alert('Open the console and check if the countries has been loaded')
+console.log(countries);
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+console.log(ages.sort());
+console.log(ages)
