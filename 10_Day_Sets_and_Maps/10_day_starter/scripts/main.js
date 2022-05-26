@@ -50,6 +50,7 @@ const places = ['Finland', 'Sweden', 'Norway'];
 let c = [...a, ...b];
 let C = new Set(c);
 console.log(C);
+// Output: Set(6) { 4, 5, 8, 9, 3, 7 }
 
 // 2. Find a intersection b (values in common)
 let A = new Set(a);
@@ -58,11 +59,13 @@ let B = new Set(b);
 let d = a.filter((num) => B.has(num));
 let D = new Set(d);
 console.log(D);
+// Output: Set(2) { 4, 5 }
 
 // 3. Find a with b (values in a that are also in b)
 let e = a.filter((num) => B.has(num));
 let E = new Set(e);
 console.log(E);
+// Output: Set(2) { 4, 5 }
 
 // Level 3
 // 1. How many languages are there in the countries object file.
