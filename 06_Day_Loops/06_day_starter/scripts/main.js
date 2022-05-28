@@ -141,13 +141,79 @@ for (i = 0; i < places.length; i++) {
 
 console.log(fiveChars)
 
-// acronym
+// longest word in web techs array
+
+const webTechs = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Redux",
+  "Node",
+  "MongoDB",
+];
+
+let max = '';
+for (i = 0; i < webTechs.length; i++) {
+  
+  if (webTechs[i].length > max.length) {
+    max = webTechs[i]
+    
+  }
+}
+console.log(max);
+
+// create array of arrays
+
+let array = []
+for (i = 0; i < webTechs.length; i++) {
+  let tempArray = []
+  array.push(webTechs[i], webTechs[i].length)
+}
+console.log(array)
+
+// create acronym MERN with array
 
 const apps = ["MongoDB", "Express", "React", "Node"];
-let acronym = '';
+let acronymArr = [];
 
-for (const app of apps) {
-  acronym = app[0].toString();
+for (i = 0; i < apps.length; i++) {
+  acronymArr.push(apps[i][0]);
+  
 }
+console.log(acronymArr)
+
+let acronym = acronymArr.join('')
 
 console.log(acronym);
+
+// print itmes
+
+for (i = 0; i < webTechs.length; i++) {
+  console.log(webTechs[i])
+}
+
+// reverse order with loop
+
+const fruit = ["banana", "orange", "mango", "lemon"]; 
+
+let fruitReversed = []
+
+for (i = 0; i < fruit.length; i++) {
+  fruitReversed.unshift(fruit[i])
+}
+
+console.log(fruitReversed)
+
+// concat and print
+
+const fullStack = [
+  ["HTML", "CSS", "JS", "React"],
+  ["Node", "Express", "MongoDB"],
+];
+
+// ?
+
+// level 3
+// 1
+console.log(countries)
