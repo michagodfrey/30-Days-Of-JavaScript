@@ -20,6 +20,20 @@ dog.getDogInfo = function() {
 dog.getDogInfo();
 
 // level 2
+// 1. Find the person who has many skills in the users object.
+// console.log(users)
+let manySkillsList  = [];
+for (user in users) {
+  if(users[user].skills.length >= 6) {
+    console.log(users[user]);
+  }
+}
+
+// for (user in users) {
+//   console.log(users[user][0])
+// }
+
+//most skills
 let max = 0;
 let mostSkilled = '';
 for (user in users) {
@@ -29,6 +43,8 @@ for (user in users) {
   }
 }
 console.log(mostSkilled);
+
+// 2. Count logged in users, count users having greater than equal to 50 points from the following object.
 isLoggedIn = 0;
 over50 = 0;
 for (user in users) {
@@ -39,25 +55,24 @@ for (user in users) {
     over50 += 1;
   }
 }
-console.log(isLoggedIn);
-console.log(over50);
+console.log(`# logged in users ${isLoggedIn}`);
+console.log(`# users with at least 50 points is ${over50}`);
+
+// 3. Find people who are MERN stack developer from the users object
+console.log('the users below are MERN stack developers')
 for (user in users) {
   if (users[user].skills.includes('MongoDB', 'Express', 'React', 'Node'))
+
   console.log(user)
 }
-for (user in users) {
-ad
-}
 
-for (user in users) {
-  console.log(users[user])
-}
+// 4. Set your name in the users object without modifying the original users object
 
-const values = Object.values(users);
-console.log(values);
 
-const keys = Object.keys(users);
-console.log(keys);
+
+// 5 Get all keys or properties of users object
+// 6 Get all the values of users object
+// 7 Use the countries object to print a country name, capital, populations and languages.
 
 // for (country in countries) {
 //   console.log(countries[country].name)
